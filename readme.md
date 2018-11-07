@@ -69,3 +69,7 @@ cta.provisional('يَا مَلأَ البَيَانِ هَلْ نَسِيْتُ�
 * altwords // pivot list of terms also translated from the same word
 * ??? ideas?
 
+#### Licence
+
+This is free and unencumbered software released into the public domain. [http://unlicense.org](http://unlicense.org)
+
