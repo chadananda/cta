@@ -9,8 +9,8 @@ The CTA data links every word or phrase translated by Shoghi Effendi from Arabic
 
 This repository includes two NPM modules:
 
-  * _cta_: a REST client with promise-wrapped http calls and local caching
-  * _cta-server_: a feathers-based REST server with in-memory Loki database
+  * *cta*: a REST client with promise-wrapped http calls and local caching
+  * *cta-server*: a feathers-based REST server with fast Loki in-memory database
 
 ### To Setup Client
 
@@ -38,7 +38,8 @@ Look up source terms, translation terms or generate machine translation
 
 ```
 cta.sources('justice', lang='en', authors='').then(res => console.log(res.data))
-   // { term: 'justice', lang: 'en',
+   // {
+   //   term: 'justice', lang: 'en',
    //   source:[ {w:'عدالة',    lang:'ar', num:55},
    //            {w:'عدل',      lang:'ar', num:40},
    //            {w:'إنصاف',    lang:'ar', num:27},
@@ -50,7 +51,8 @@ cta.sources('justice', lang='en', authors='').then(res => console.log(res.data))
 
 ```
 cta.translations('عدالة', lang='ar', authors='').then(res => console.log(res.data))
-   // { term: 'عدالة', lang: 'ar',
+   // {
+   //   term: 'عدالة', lang: 'ar',
    //   source:[ {w:'إنصاف',  lang:'ar', num:55},
    //            {w:'إنصاف',  lang:'ar', num:40} ]
    // }
@@ -58,7 +60,8 @@ cta.translations('عدالة', lang='ar', authors='').then(res => console.log(re
 
 ```
 cta.provisional('يَا مَلأَ البَيَانِ هَلْ نَسِيْتُمْ وَصَايَايَ', 'en').then(res => console.log(res.data))
-   // { source: 'يَا مَلأَ البَيَانِ هَلْ نَسِيْتُمْ وَصَايَايَ',
+   // {
+   //   source: 'يَا مَلأَ البَيَانِ هَلْ نَسِيْتُمْ وَصَايَايَ',
    //   translation: 'O people of the Bayan! Have ye forgotten My exhortations?'
    // }
 ```
