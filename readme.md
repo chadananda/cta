@@ -17,7 +17,7 @@ This repository includes two NPM modules:
 ```
  npm install cta_server
  npm run server
- >>> cta server running at http://localhost:1844
+ >>> CTA API server running at http://localhost:1844
 ```
 
 
@@ -31,7 +31,7 @@ To initialize, create object pointing to running server instance:
 
 ```
  import CTA_CLIENT from 'cta_client'
- const cta = new CTA_CLIENT('http://localhost:1844')
+ CONST cta = new CTA_CLIENT('http://localhost:1844')
 ```
 
 Look up source terms, translation terms or generate machine translation
@@ -67,5 +67,5 @@ cta.provisional('يَا مَلأَ البَيَانِ هَلْ نَسِيْتُ�
 
 * translation_report // generate full report of translations based on all stems and roots
 * altwords // pivot list of terms also translated from the same word
-*
+* ??? ideas?
 
