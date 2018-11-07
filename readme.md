@@ -12,7 +12,7 @@ This repository includes two NPM modules:
   * *cta*: a REST client with promise-wrapped http calls and local caching
   * *cta-server*: a feathers-based REST server with fast Loki in-memory database
 
-### To Setup Client
+### To Setup CTA API Server
 
 ```
  npm install cta_server
@@ -21,7 +21,7 @@ This repository includes two NPM modules:
 ```
 
 
-### To Use Client
+### To Use CTA Client
 
 To use client, simply install:
 
