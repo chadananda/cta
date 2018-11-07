@@ -30,8 +30,8 @@ To use client, simply install:
 To initialize, create object pointing to running server instance:
 
 ```
- import CTA_CLIENT from 'cta_client'
- CONST cta = new CTA_CLIENT('http://localhost:1844')
+ import cta_client from 'cta_client'
+ CONST cta = new cta_client('http://localhost:1844')
 ```
 
 Look up source terms, translation terms or generate machine translation
