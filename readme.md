@@ -10,7 +10,7 @@ The CTA data links every word or phrase translated by Shoghi Effendi from Arabic
 This repository includes two NPM modules:
 
   * *cta*: a REST client with promise-wrapped http calls and local caching
-  * *cta-server*: a feathers-based REST server with fast Loki in-memory database
+  * *cta-server*: a FeathersJS-based REST server with fast LokiJS in-memory database
 
 ### To Setup CTA API Server
 
@@ -34,7 +34,7 @@ To initialize, create object pointing to running server instance:
  CONST cta = new cta_client('http://localhost:1844')
 ```
 
-Look up source terms, translation terms or generate machine translation
+Look up source terms, translation terms or generate provisional translation
 
 ```
 cta.sources('justice', lang='en', authors='').then(res => console.log(res.data))
